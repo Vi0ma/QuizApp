@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Primary palette - Indigo/Violet moderne -->
+    <color name="primary">#5C6BC0</color>
+    <color name="primary_dark">#3949AB</color>
+    <color name="primary_light">#9FA8DA</color>
+    <color name="primary_ultra_light">#E8EAF6</color>
+
+    <!-- Accent - Corail chaleureux -->
+    <color name="accent">#FF7043</color>
+    <color name="accent_light">#FFCCBC</color>
+
+    <!-- Surface & Background -->
+    <color name="background">#F5F6FA</color>
+    <color name="surface">#FFFFFF</color>
+    <color name="surface_variant">#F0F2FF</color>
+    <color name="card_background">#FFFFFF</color>
+
+    <!-- Status colors -->
+    <color name="success">#43A047</color>
+    <color name="success_light">#C8E6C9</color>
+    <color name="error">#E53935</color>
+    <color name="error_light">#FFCDD2</color>
+    <color name="warning">#FB8C00</color>
+    <color name="warning_light">#FFE0B2</color>
+    <color name="info">#039BE5</color>
+    <color name="info_light">#B3E5FC</color>
+
+    <!-- Text -->
+    <color name="text_primary">#1A1A2E</color>
+    <color name="text_secondary">#6B7280</color>
+    <color name="text_hint">#9CA3AF</color>
+    <color name="text_on_primary">#FFFFFF</color>
+    <color name="text_on_accent">#FFFFFF</color>
+
+    <!-- Divider & borders -->
+    <color name="divider">#E5E7EB</color>
+    <color name="border">#D1D5DB</color>
+
+    <!-- Leaderboard medal colors -->
+    <color name="gold">#FFD700</color>
+    <color name="silver">#C0C0C0</color>
+    <color name="bronze">#CD7F32</color>
+
+    <!-- Daily challenge gradient -->
+    <color name="daily_start">#FF6F00</color>
+    <color name="daily_end">#FF8F00</color>
+    <color name="daily_light">#FFF3E0</color>
+
+    <!-- Legacy aliases pour compatibilité Java -->
+    <color name="black">#FF1A1A2E</color>
+    <color name="red">#FFE53935</color>
+    <color name="blue">#FF5C6BC0</color>
+    <color name="green">#FF43A047</color>
+    <color name="pink">#FF5C6BC0</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="yellow">#FFFB8C00</color>
+</resources>

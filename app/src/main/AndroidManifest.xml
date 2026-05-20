@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Requis pour le réseau -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- Accès galerie photos (Android 12 et moins) -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"
+        android:maxSdkVersion="32" />
+    <!-- Accès galerie photos (Android 13+) -->
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+
+    <!-- REQUIS POUR LA RECONNAISSANCE VOCALE -->
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+
+    <!-- ✅ NOUVEAU : REQUIS POUR LA CAMÉRA -->
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/MyStyle"
+        android:networkSecurityConfig="@xml/network_security_config">
+
+        <!-- Écran de connexion : point d'entrée -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".Register"   android:exported="false" />
+        <activity android:name=".Score"      android:exported="false" />
+
+        <!-- Activités Dynamiques -->
+        <activity android:name=".CategoryChoiceActivity"    android:exported="false" />
+        <activity android:name=".DynamicQuizActivity"       android:exported="false" />
+        <activity android:name=".DailyQuizActivity"         android:exported="false" />
+        <activity android:name=".DailyLeaderboardActivity"  android:exported="false" />
+        <activity android:name=".WelcomeActivity"           android:exported="false" />
+        <activity android:name=".ProfileActivity"           android:exported="false" />
+        <activity android:name=".LeaderboardActivity"       android:exported="false" />
+
+        <!--
+            ✅ NOUVEAU : FileProvider
+            Permet à l'app de partager un fichier temporaire avec l'app Caméra
+            de façon sécurisée (Android bloque les URI directes de fichiers)
+            android:authorities DOIT être : nom_du_package + ".fileprovider"
+        -->
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+    </application>
+
+</manifest>

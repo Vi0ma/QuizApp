@@ -1,0 +1,74 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Style de base moderne AppCompat + Material -->
+    <style name="MyStyle" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryDark">@color/primary_dark</item>
+        <item name="colorAccent">@color/accent</item>
+        <item name="android:windowBackground">@color/background</item>
+        <item name="android:statusBarColor">@color/primary_dark</item>
+        <item name="android:navigationBarColor">@color/surface</item>
+        <item name="android:fontFamily">sans-serif</item>
+    </style>
+
+    <style name="Theme.Projet_Quizz_Android" parent="MyStyle" />
+
+    <!-- Card style uniforme -->
+    <style name="AppCardView" parent="Widget.MaterialComponents.CardView">
+        <item name="cardCornerRadius">16dp</item>
+        <item name="cardElevation">4dp</item>
+        <item name="cardBackgroundColor">@color/surface</item>
+        <item name="contentPadding">0dp</item>
+    </style>
+
+    <!-- Style de base pour les boutons -->
+    <style name="AppButton" parent="Widget.MaterialComponents.Button">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">52dp</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:letterSpacing">0.05</item>
+    </style>
+
+    <!-- Bouton primaire -->
+    <style name="AppButton.Primary">
+        <item name="android:textColor">@color/text_on_primary</item>
+        <item name="android:backgroundTint">@color/primary</item>
+    </style>
+
+    <!-- Bouton secondaire -->
+    <style name="AppButton.Secondary">
+        <item name="android:textColor">@color/primary</item>
+        <item name="android:backgroundTint">@color/primary_ultra_light</item>
+    </style>
+
+    <!-- Bouton danger -->
+    <style name="AppButton.Danger">
+        <item name="android:textColor">@color/text_on_primary</item>
+        <item name="android:backgroundTint">@color/error</item>
+    </style>
+
+    <!-- EditText style -->
+    <style name="AppEditText">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="android:textColorHint">@color/text_hint</item>
+        <item name="android:padding">14dp</item>
+        <item name="android:background">@drawable/bg_input_field</item>
+        <item name="android:inputType">text</item>
+    </style>
+
+    <!-- Section title -->
+    <style name="SectionTitle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="android:layout_marginTop">16dp</item>
+        <item name="android:layout_marginBottom">8dp</item>
+    </style>
+
+</resources>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Ce fichier dit à Android quels dossiers ton app peut partager via FileProvider.
+    cache-path = le dossier getCacheDir() de l'app (fichiers temporaires).
+    name = un alias interne (peu importe le nom).
+    path = "." signifie tout le dossier cache.
+-->
+<paths>
+    <cache-path name="profile_photos" path="." />
+</paths>
